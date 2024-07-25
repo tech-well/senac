@@ -1,0 +1,120 @@
+.inline-block{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    display: inline-block;
+}
+
+.block{
+    /* width: 300px;
+    height: 300px; */
+    background-color: blueviolet;
+    margin: 10px;
+    display: block;
+}
+
+/* escondendo o elemento */
+
+.escondendo{
+    display: none;
+}
+
+/* posição estática - ele segue o fluxo do html, estatic não é afetado por top, right leftou bottom */
+
+.estatic{
+    position: static;
+    background-color: crimson;
+    color: antiquewhite;
+
+}
+
+
+/* posição relativa */
+
+.relative{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: darkgray;
+    color: darkolivegreen;
+    top: 50px;
+    left: 50px;
+}
+
+/* posição absoluta */
+/* foi para o topo */
+.absolute{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: darkviolet;
+    color: grey;
+    top: 2px;
+    left: 2px;
+}
+
+/* posição relativa com asoluta */
+
+.bloco-relativo{
+    width: 200px;
+    height: 200px;
+    border: solid 2px rgb(77, 77, 94);
+    position: relative;
+}
+
+.bloco-relativo-2, .bloco-relativo-3{
+    width: 70px;
+    height: 70px;
+    background-color: darkorange;
+    position: absolute;
+}
+
+.bloco-relativo-2{
+    top: 2px;
+    left: 2px;
+}
+
+.bloco-relativo-3{
+    right: 10px;
+    bottom: 10px;
+}
+
+
+/* posição sticky */
+
+.sticky{
+    width: 150px;
+    height: 150px;
+    background-color: deeppink;
+    position: sticky;
+    top: 20px;
+}
+
+/* z-index aqui estou aproveitando o style anterior do bloco relativo da posição relativa com absoluta */
+
+.absoluto-3, .absoluto-4, .absoluto-5{
+    width: 60px;
+    height: 60px;
+    background-color: sienna;
+    position: absolute;
+}
+
+.absoluto-3{
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.absoluto-4{
+    top: 15px;
+    left: 15px;
+    background-color: darkblue;
+    z-index: 2;
+}
+
+.absoluto-5{
+  top: 30px;
+  left: 30px;
+  background-color: deepskyblue;
+  z-index: 1;
+}
